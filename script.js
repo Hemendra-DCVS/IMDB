@@ -1,7 +1,7 @@
 // API URLs
 const searchAPIUrl = "http://www.omdbapi.com/?s=";
 const detailsAPIUrl = "http://www.omdbapi.com/?i=";
-const apiKey = "c05bfc1b";
+// const apiKey = "c05bfc1b";
 
 // DOM Elements
 const movieSearchBox = document.getElementById('movie-search-box');
