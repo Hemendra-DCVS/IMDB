@@ -26,13 +26,13 @@ The favorite movies are then displayed in a modal, where users can also remove m
 
 
 # [Links]
--Netlify :
+-Netlify : https://dcvsh-imdb.netlify.app/
 -Demo Video : 
--Github Repo : 
+-Github Repository : https://github.com/Hemendra-DCVS/IMDB
 
 
 # [Author]
--Name : 
--LinkedIn :
--Github : 
+-Name : Hemendra
+-LinkedIn : https://www.linkedin.com/in/hemendra-dcvs/
+-Github : https://github.com/Hemendra-DCVS
 -Email : hemendrachanti@gmail.com
