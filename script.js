@@ -54,7 +54,7 @@ movieItem.innerHTML = `
       <div class="card-body">
         <h5 class="card-title">${movie.Title}</h5>
         <p class="card-text">${movie.Year}</p>
-        <button class="btn btn-outline-primary" onclick="addToFavourites('${movie.imdbID}')"><i class="fas fa-heart"></i></button>
+        <button class="btn btn-outline-primary" onclick="addToFavourites('${movie.imdbID}')"><i class="fa-solid fa-heart fa-fade"></i></button>
         <button class="btn btn-link" data-toggle="modal" data-target="#movieDetailsModal" onclick="loadMovieDetails('${movie.imdbID}')">More Details</button>
       </div>
     </div>
