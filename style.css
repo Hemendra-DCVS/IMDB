@@ -7,7 +7,7 @@ body {
 
 /* Navbar Styles */
 .navbar {
-  background-color: #343a40;
+  background-color: #4A4A5C !important;
 }
 
 .navbar-brand {
@@ -41,8 +41,9 @@ body {
 #search-list {
   margin-top: 20px;
   border-radius: 0.25rem;
-  background-color: #ffffff;
+  background-color: #1e1e2e;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  
 }
 
 .card {
@@ -100,8 +101,8 @@ body {
 }
 
 #favorite-movies-section{
-  background-color:#1e1e36; 
-  color:yellow;
+  background-color:#4A4A5C;
+  color:#EFEDFF;
 }
 #favorite-movies-section .card{
   background-color: #1e1e2e; 
