@@ -201,6 +201,11 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+html{
+scroll-behavior: smooth;
+}
+
+
 /* Media Queries */
 @media (max-width: 768px) {
   /* Adjust styles for smaller screens */
