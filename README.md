@@ -25,6 +25,10 @@ Users can add movies to their favorites list by clicking the heart icon next to 
 The favorite movies are then displayed in a modal, where users can also remove movies from their favorites.
 
 
+# Screenshots and GIFs of Website
+[Mobile_view](https://github.com/Hemendra-DCVS/IMDB/assets/128579737/b35fdf09-7505-43df-8499-5d63d33cdf8e)
+
+
 # [Links]
 -Netlify : https://dcvsh-imdb.netlify.app/
 -Demo Video : 
