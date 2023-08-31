@@ -3,7 +3,7 @@ const searchAPIUrl = "http://www.omdbapi.com/?s=";
 const detailsAPIUrl = "http://www.omdbapi.com/?i=";
 const apiKey = "c05bfc1b";
 
-// DOM Elements
+// Getting the DOM Elements
 const movieSearchBox = document.getElementById('movie-search-box');
 const searchList = document.getElementById('search-list');
 const searchBtn = document.getElementById('search-btn');
@@ -12,9 +12,10 @@ const movieDetailsModalBody = document.getElementById('movieDetailsModalBody');
 const favouriteModal = document.getElementById('favouriteModal');
 const favouriteModalBody = document.getElementById('favouriteModalBody');
 
+//favouritesMovies array stores the list of favourite items
 let favouriteMovies = [];
 
-// Utility function to fetch API data
+// Support function to fetch API data
 async function fetchAPI(url) {
   try {
     const response = await fetch(url);
@@ -26,7 +27,7 @@ async function fetchAPI(url) {
   }
 }
 
-// Load movies from API asynchronously
+// Loading the movies from API URL
 async function loadMovies(searchTerm) {
   const data = await fetchAPI(`${searchAPIUrl}${searchTerm}&apikey=${apiKey}`);
   
@@ -64,7 +65,7 @@ movieItem.innerHTML = `
   });
 }
 
-// Load movie details and display in modal
+// Load movie details and display
 async function loadMovieDetails(movieID) {
   const response = await fetch(`${detailsAPIUrl}${movieID}&apikey=${apiKey}`);
   const movieDetails = await response.json();
@@ -97,7 +98,6 @@ function addToFavourites(movieID) {
     // Add the movie to favourites
     favouriteMovies.push(movieID);
     updateFavouritesModal();
-
     // Display a notification for "Movie added to favorites"
     showNotification('Movie added to favorites!', 'added');
   }

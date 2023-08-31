@@ -20,6 +20,7 @@ body {
 .navbar-brand:hover {
   color: #f8f9fa;
 }
+
 /* Styles for "My Favorite Movies" button */
 .navbar-toggler {
   font-family: 'Sedgwick Ave Display', sans-serif, system-ui;; 
@@ -43,7 +44,6 @@ body {
   border-radius: 0.25rem;
   background-color: #1e1e2e;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  
 }
 
 .card {
@@ -78,6 +78,15 @@ body {
   border: none;
 }
 
+#favorite-movies-section{
+  background-color:#1e1e2e; 
+  color:#EFEDFF;
+}
+
+#favorite-movies-section .card{
+  background-color: #1e1e2e; 
+}
+
 /* Favourite Button Styles */
 .btn-outline-primary {
   border-color: #007bff;
@@ -93,6 +102,7 @@ body {
 .btn-danger {
   background-color: #dc3545;
   border-color: #dc3545;
+  border-radius: 0.7em;
 }
 
 .btn-danger:hover {
@@ -100,16 +110,7 @@ body {
   border-color: whitesmoke;
 }
 
-#favorite-movies-section{
-  background-color:#1e1e2e; 
-  color:#EFEDFF;
-}
-#favorite-movies-section .card{
-  background-color: #1e1e2e; 
-}
-
-
-
+/* Notification Styles */
 .notification {
   position: fixed;
   top: 10px;
@@ -130,6 +131,7 @@ body {
 .notification.removed {
   background-color: #dc3545;
 }
+
 .notification.exists {
   background-color: orange;
 }
@@ -138,8 +140,6 @@ body {
   opacity: 0;
   transform: translateY(-50px);
 }
-
-
 
 /* Back to Top Button Styles */
 .back-to-top {
@@ -162,7 +162,7 @@ body {
 }
 
 
-/* Hover Styles for Movie Cards */
+/* Hover State for Movie Cards */
 .card:hover {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   transform: translateY(-3px);
@@ -204,6 +204,7 @@ body {
 html{
 scroll-behavior: smooth;
 }
+
 
 
 /* Media Queries */
