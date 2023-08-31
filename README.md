@@ -27,6 +27,9 @@ The favorite movies are then displayed in a modal, where users can also remove m
 
 # Screenshots and GIFs of Website
 [Mobile_view](https://github.com/Hemendra-DCVS/IMDB/assets/128579737/b35fdf09-7505-43df-8499-5d63d33cdf8e)
+[Search-Movie](https://github.com/Hemendra-DCVS/IMDB/assets/128579737/a634e1c5-ba1b-441a-8d0b-b2cffdc3cbe4)
+[Movie-Details](https://github.com/Hemendra-DCVS/IMDB/assets/128579737/01809dff-18ee-459e-955f-82835898807c)
+[Favourites](https://github.com/Hemendra-DCVS/IMDB/assets/128579737/f6d16f8d-14bc-4d29-865a-db3249382291)
 
 
 # [Links]
