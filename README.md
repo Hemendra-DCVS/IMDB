@@ -43,6 +43,9 @@ The favorite movies are then displayed in a modal, where users can also remove m
 
 # [Author]
 -Name : Hemendra
+
 -LinkedIn : https://www.linkedin.com/in/hemendra-dcvs/
+
 -Github : https://github.com/Hemendra-DCVS
+
 -Email : hemendrachanti@gmail.com
