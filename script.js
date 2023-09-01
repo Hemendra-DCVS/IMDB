@@ -30,7 +30,6 @@ async function fetchAPI(url) {
 // Loading the movies from API URL
 async function loadMovies(searchTerm) {
   const data = await fetchAPI(`${searchAPIUrl}${searchTerm}&apikey=${apiKey}`);
-  
   if (data && data.Response === "True") {
     displayMovieList(data.Search);
   }
@@ -103,20 +102,6 @@ function addToFavourites(movieID) {
   }
 }
 
-// Function to show a notification
-function showNotification(message, className) {
-  const notification = document.createElement('div');
-  notification.classList.add('notification', className);
-  notification.innerHTML = `<i class="fa-solid fa-bell fa-shake"></i> ${message}`;
-  document.body.appendChild(notification);
-  setTimeout(() => {
-    notification.classList.add('hidden');
-    setTimeout(() => {
-      document.body.removeChild(notification);
-    }, 500); // Remove the notification element after the transition
-  }, 1000); // Show the notification (Milliseconds)
-}
-
 // Update favourites modal content
 function updateFavouritesModal() {
   const favoriteMoviesSection = document.getElementById('favorite-movies-section');
@@ -156,7 +141,21 @@ function removeFromFavourites(movieID) {
   updateFavouritesModal();
 }
 
-// Search movies when user types
+// Function to show a notification
+function showNotification(message, className) {
+  const notification = document.createElement('div');
+  notification.classList.add('notification', className);
+  notification.innerHTML = `<i class="fa-solid fa-bell fa-shake"></i> ${message}`;
+  document.body.appendChild(notification);
+  setTimeout(() => {
+    notification.classList.add('hidden');
+    setTimeout(() => {
+      document.body.removeChild(notification);
+    }, 500); // Remove the notification element after the transition
+  }, 1000); // Show the notification for certain period (Milliseconds)
+}
+
+// Passing search term to loadMovies function after removing spaces
 movieSearchBox.addEventListener('keyup', () => {
   const searchTerm = movieSearchBox.value.trim();
   if (searchTerm.length > 0) {
