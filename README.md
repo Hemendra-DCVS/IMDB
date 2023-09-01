@@ -1,5 +1,6 @@
 # IMDB Website
 IMDB clone using IMDB API
+
 A simple website that allows users to search for 
 movies, view movie details, and add their favorite movies to a list.
 
